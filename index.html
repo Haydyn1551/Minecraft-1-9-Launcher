@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="/assets/images/window_icon.png">
+    <title>Minecraft 1.9 Clone Javascript </title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #333;
+            color: #fff;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .sidebar {
+            width: 250px;
+            background: #555;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .sidebar img {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+        .sidebar h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        .sidebar p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .main h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .main p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+        .play-button {
+            background: rgba(76, 175, 80, 0.8);
+            border: 2px solid black;
+            color: #fff;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+
+        }
+        .play-button:hover {
+            background: #45A049;
+            transform: scale(1.05);
+        }
+        .play-button:active {
+            transform: scale(0.95);
+        }
+        footer {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.8rem;
+            opacity: 0.6;
+        }
+
+		.bottom-head {
+			background-color: #555;
+			width: 100%;
+			height: 40vh;
+		}
+
+		.img {
+			background-image: url('/assets/images/background2.png');
+			background-size: cover;
+			width: 100%;
+			height: 80vh;
+			justify-items: center;
+			justify-content: center;
+			text-align: center;
+		}
+
+		a {
+			color: #45A049;
+		}
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <img src="/assets/images/window_icon.png" alt="Minecraft Logo">
+        <h2>Minecraft 1.9 Launcher</h2>
+        <p>Minecraft Javascript (McJS)</p>
+		<br>
+		<p>Made by Level 50 Studio's and Space + Network's Team(McJs)</p>
+		<br>
+		<p>Discord:</p><a href="https://discord.gg/K7H3nbCS">https://discord.gg/3822Gw8y and https://discord.gg/K7H3nbCS</a>
+	</div>
+    <div class="main">
+		<div class="img">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<h1>Welcome to Minercaft 1.9</h1>
+			<p>Press the button below to start the Minecraft 1.9 (JavaScript)</p>
+			<br>
+			<br>
+			<button class="play-button" onclick="openGame()">Play</button>
+		</div>
+		<br>
+		<br>
+		<div class="bottom-head">
+			<h1>Bugs</h1>
+			<li>No bugs have been reported</li>
+			<br>
+			<br>
+			<h1>Updates</h1>
+			<p>Nothing new yet</p>
+		</div>
+    </div>
+    <footer>&copy; 2024 Minecraft. All rights reserved.</footer>
+    <script>
+        function openGame() {
+            alert("The game is not out yet")
+            //window.location.href ='index.html';
+        }
+    </script>
+</body>
+</html>
